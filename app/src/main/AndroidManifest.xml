@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kandjiabdou.jeupions12">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/mon_logo_app"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/mon_logo_app_round"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+        <activity android:name=".ActiviteParametres"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ActiviteJeu"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Apropos"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ActiviteNouvellePartie"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".PrincipaleActivite"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Demarrage"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/background2"
+	android:orientation="vertical"
+	android:padding="10dp">
+
+	<android.support.constraint.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<ImageButton
+			android:id="@+id/btRetourAp"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_marginLeft="5dp"
+			android:layout_marginTop="5dp"
+			android:background="@drawable/retour"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<TextView
+			android:id="@+id/textView2"
+			android:layout_width="150dp"
+			android:layout_height="50dp"
+			android:background="@drawable/titre_demarrage"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintHorizontal_bias="0.4"
+			app:layout_constraintStart_toEndOf="@+id/btRetourAp"
+			app:layout_constraintTop_toTopOf="parent" />
+
+	</android.support.constraint.ConstraintLayout>
+
+
+	<ScrollView
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_marginTop="10dp"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+			<TextView
+				android:id="@+id/txtKandji"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:background="@color/marron_foncee"
+				android:text="@string/leJeu12pions"
+				android:textSize="20dp"
+				android:textStyle="bold"
+				android:textColor="@color/noir" />
+			<TextView
+				android:id="@+id/txtdescription"
+				android:layout_width="match_parent"
+				android:padding="10dp"
+				android:layout_height="wrap_content"
+				android:background="@color/marron_claire"
+				android:text="@string/description"
+				android:textSize="12dp"
+				android:textColor="@color/noir" />
+
+			<TextView
+				android:id="@+id/txtRegelesJeu"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:layout_marginTop="5dp"
+				android:layout_marginBottom="5dp"
+				android:text="@string/reglesDujeu"
+				android:background="@color/marron_foncee"
+				android:textSize="17dp"
+				android:textStyle="bold"
+				android:textColor="@color/noir" />
+			<TextView
+				android:id="@+id/titreMateriel"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:text="@string/titreMateriel"
+				android:background="@color/marron_foncee"
+				android:textSize="17dp"
+				android:padding="5dp"
+				android:textStyle="bold"
+				android:textColor="@color/noir" />
+			<TextView
+				android:id="@+id/txtMeriel"
+				android:layout_width="match_parent"
+				android:padding="10dp"
+				android:layout_height="wrap_content"
+				android:background="@color/marron_claire"
+				android:text="@string/txtMateriel"
+				android:textSize="12dp"
+				android:textColor="@color/noir" />
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_margin="5dp"
+				android:layout_gravity="center"
+				android:orientation="horizontal">
+				<ImageView
+					android:layout_width="120dp"
+					android:layout_height="120dp"
+					android:background="@drawable/debut_partie" />
+			</LinearLayout>
+			<TextView
+				android:id="@+id/titreDeplacement"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:text="@string/titreDeplacement"
+				android:background="@color/marron_foncee"
+				android:textSize="17dp"
+				android:padding="5dp"
+				android:textStyle="bold"
+				android:textColor="@color/noir" />
+			<TextView
+				android:id="@+id/txtDeplacement"
+				android:layout_width="match_parent"
+				android:padding="10dp"
+				android:layout_height="wrap_content"
+				android:background="@color/marron_claire"
+				android:text="@string/txtDeplacement"
+				android:textSize="12dp"
+				android:textColor="@color/noir" />
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_margin="5dp"
+				android:layout_gravity="center"
+				android:orientation="horizontal">
+				<ImageView
+					android:layout_width="120dp"
+					android:layout_height="120dp"
+					android:background="@drawable/mvm_pion"
+					android:layout_marginLeft="30dp"
+					/>
+				<ImageView
+					android:layout_width="120dp"
+					android:layout_height="120dp"
+					android:background="@drawable/mvm_dame"
+					android:layout_marginLeft="30dp"
+					/>
+			</LinearLayout>
+
+
+			<TextView
+				android:id="@+id/titreCouronement"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:text="@string/titreCouronement"
+				android:background="@color/marron_foncee"
+				android:textSize="17dp"
+				android:padding="5dp"
+				android:textStyle="bold"
+				android:textColor="@color/noir" />
+			<TextView
+				android:id="@+id/txtCouronnement"
+				android:layout_width="match_parent"
+				android:padding="10dp"
+				android:layout_height="wrap_content"
+				android:background="@color/marron_claire"
+				android:text="@string/txtCouronnement"
+				android:textSize="12dp"
+				android:textColor="@color/noir" />
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_margin="5dp"
+				android:layout_gravity="center"
+				android:orientation="horizontal">
+				<ImageView
+					android:layout_width="120dp"
+					android:layout_height="120dp"
+					android:background="@drawable/prise_c2"
+					android:layout_marginLeft="30dp"
+					/>
+				<ImageView
+					android:layout_width="120dp"
+					android:layout_height="120dp"
+					android:background="@drawable/courronnement_1"
+					android:layout_marginLeft="30dp"
+					/>
+			</LinearLayout>
+
+			<TextView
+				android:id="@+id/titrePrise"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:text="@string/titrePrise"
+				android:background="@color/marron_foncee"
+				android:textSize="17dp"
+				android:padding="5dp"
+				android:textStyle="bold"
+				android:textColor="@color/noir" />
+			<TextView
+				android:id="@+id/txtPrise"
+				android:layout_width="match_parent"
+				android:padding="10dp"
+				android:layout_height="wrap_content"
+				android:background="@color/marron_claire"
+				android:text="@string/txtPrise"
+				android:textSize="12dp"
+				android:textColor="@color/noir" />
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_margin="5dp"
+				android:layout_gravity="center"
+				android:orientation="horizontal">
+				<ImageView
+					android:layout_width="120dp"
+					android:layout_height="120dp"
+					android:background="@drawable/rafle_dame"
+					android:layout_marginLeft="30dp"
+					/>
+				<ImageView
+					android:layout_width="120dp"
+					android:layout_height="120dp"
+					android:background="@drawable/prise_pion"
+					android:layout_marginLeft="30dp"
+					/>
+			</LinearLayout>
+
+			<TextView
+				android:id="@+id/titreFinPartie"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:text="@string/titreFinPartie"
+				android:background="@color/marron_foncee"
+				android:textSize="17dp"
+				android:padding="5dp"
+				android:textStyle="bold"
+				android:textColor="@color/noir" />
+			<TextView
+				android:id="@+id/txtFinPartie"
+				android:layout_width="match_parent"
+				android:padding="10dp"
+				android:layout_height="wrap_content"
+				android:background="@color/marron_claire"
+				android:text="@string/txtFinPartie"
+				android:textSize="12dp"
+				android:textColor="@color/noir" />
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_marginTop="10dp"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="10dp"
+				android:gravity="center"
+				android:background="@color/marron_foncee"
+				android:text="@string/copyrignt"
+				android:textStyle="bold"
+				android:textSize="12dp"
+				android:textColor="@color/noir" />
+
+		</LinearLayout>
+		</ScrollView>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="white_text">#EEEEEE</color>
+	<color name="white_text_disabled">#AAAAAA</color>
+	<color name="colorPrimary">#6200EE</color>
+	<color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="bleu">#310598</color>
+    <color name="noir">#000000</color>
+    <color name="marron_foncee">#9A3718</color>
+    <color name="marron_claire">#E8D1B5</color>
+</resources>

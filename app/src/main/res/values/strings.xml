@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">Pions 12</string>
+    <string name="bienvenu">BIENVENU DANS LE JEU</string>
+    <string name="commencer">Commencer</string>
+    <string name="titre_nouvelle_partie">Nouvelle partie</string>
+    <string name="joueur1n">Joueur 1 : Noir</string>
+    <string name="joueur2b">Joueur 2 : Blanc</string>
+    <string name="joueur2r">Joueur 2 : Rouge</string>
+    <string name="joueur2m">Joueur 2 : Marron</string>
+    <string name="humain">Humain</string>
+    <string name="odinateur">Ordinateur</string>
+    <string name="bt_jouer_nouvelle_partie">Jouer</string>
+    <string name="text_diffculteF">Niveau : FACILE</string>
+    <string name="text_diffculteM">Niveau : MOYEN</string>
+    <string name="text_diffculteD">Niveau : DIFFICILE</string>
+    <string name="ordiVSordiToast">Un des joueur doit être un humain</string>
+    <string name="annuler">Refaire</string>
+    <string name="nouvelle_partie">Nouvelle partie</string>
+    <string name="rougeCommence">Rouge commence</string>
+    <string name="marronCommence">Marron commence</string>
+    <string name="blancCommence">Blanc commence</string>
+    <string name="noirCommence">Noir commence</string>
+    <string name="a_propos">A propos</string>
+    <string name="titrePopupFin">Fin de partie</string>
+    <string name="effetsSonores">Effets Sonores</string>
+    <string name="musique">Musique</string>
+    <string name="langue">Langue</string>
+    <string name="themePlateau">Thème Plateau</string>
+    <string name="classique">Classique</string>
+    <string name="Plateaublanc">BLanc</string>
+    <string name="bois">Bois</string>
+    <string name="themePion">Thème Pion</string>
+    <string name="NoirBlanc">Noir et Blanc</string>
+    <string name="noirRouge">Noir et Rouge</string>
+    <string name="noirMarron">Noir et Marron</string>
+    <string name="aVousJouer">A vous de jouer</string>
+    <string name="tourDeNoir">Tour de Noir</string>
+    <string name="tourDeBlanc">Tour de Blanc</string>
+    <string name="tourOrdi"> Hum à mon tour …</string>
+    <string name="tourDeRouge">Tour de Rouge</string>
+    <string name="tourDeMarron">Tour de Marron</string>
+    <string name="finDuJeu">Fin du jeu</string>
+    <string name="partieEgale">" Partie égale "</string>
+    <string name="blancGagne">Blanc a gagné</string>
+    <string name="rougeGagne">Rouge a gagné</string>
+    <string name="marronGagne">Marron a gagné</string>
+    <string name="noirGagne">Noir a gagné</string>
+    <string name="tuAsPerdu">Vous avez perdu</string>
+    <string name="tuAsGagne">Bravo !!\n Vous avez gagné</string>
+    <string name="francais">Français</string>
+    <string name="anglais">Anglais</string>
+    <string name="wolof">Wolof</string>
+    <string name="aide">Aide</string>
+    <string name="retourner">Retourner</string>
+    <string name="leJeu12pions">Le jeu Pions 12</string>
+    <string name="description">"\tLe Pions 12 encore appelé "Wouré" est un jeu de stratégie combinatoire d'Afrique de l'Ouest. Il est essentiellement joué au Sénégal. Ce simple jeu de la même famille que le jeu Yoté est une variante du jeu de Dames, les règles sont trop peu similaires. Il s’agit d’un jeu très populaire et très pratiqué, du fait notamment de ses simples règles.
+Traditionnellement, le Pion 12 est souvent joué avec de simples cailloux ou de bâtons constituant les pions, des trous sont creusés sur le sol ou des lignes tracées sur un support pour former le plateau. Le jeu se joue sur un plateau carré divisé en 25 cases égales de même couleur. Au début d’une partie les deux joueurs ont chacun 12 pions. Chaque douzaine de couleur est la propriété d'un jour. Généralement les joueurs choisissent les couleurs noire et blanche. Le but du jeu est de capturer tous les pions adverses."</string>
+    <string name="reglesDujeu">Règles du jeu</string>
+    <string name="txtMateriel">"Le jeu se joue sur un plateau de 25 cases égales. Avant de débuter une partie, les 10 pions noirs et les 10 pions blancs sont disposés sur les deux premières rangées de chaque joueur. Les deux pions sont posés au rang du milieu du côté droit de chaque joueur. Seule la case au centre du plateau est vide au début. Le joueur qui commence la partie posera obligatoirement son premier coup dans cette case. On peut inverser la disposition des pions noir et blanc selon la couleur choisie par chaque joueur. Celui qui commence la partie ne dépend pas des couleurs. Les adversaires jouent un coup chacun à tour de rôle avec leurs pièces. "</string>
+    <string name="titreMateriel">Matériel</string>
+    <string name="titreDeplacement">Le déplacement des pièces</string>
+    <string name="txtDeplacement">"Il existe deux types de pièces : les pions et les Dames.\n    Un pion se déplace obligatoirement vers l’avant et sur les côtés, d’une case sur une case libre de la rangée suivante. Les déplacements sur des cases non alignées (les diagonales) ne sont pas permis.\n   Une Dame se déplace dans toutes les directions sur les cases libres successives de l’horizontal ou la verticale qu’elle occupe. Elle peut se poser sur une case libre éloignée, au-delà de cases libres alignées à sa position. "</string>
+    <string name="titreCouronement">Le couronnement des pions</string>
+    <string name="txtCouronnement">"Un pion devient une Dame lorsqu'il atteint la première rangée de son adversaire, le pion est couronné.\n   Aussi lorsqu’un joueur ne dispose que d’une seule pièce sur le plateau, alors ce pion devient une dame et elle pourra se déplacer dans toutes les directions. "</string>
+    <string name="titrePrise">La prise</string>
+    <string name="txtPrise">"La prise des pièces adverse s’effectue horizontalement et en avant, pour les pions. Les Dames font l'exception car ils peuvent capturer dans toutes les directions. Lorsqu'une prise s'est effectuée, seule la pièce adverse traversée est retirée du plateau.\n   Il y a trois sortes de prises dans le Pions 12 : la prise simple, la rafle et la prise surplace.\n   Un pion peut faire une prise simple lorsqu’il se trouve en présence d’une pièce adverse derrière laquelle se trouve une case libre, il peut sauter par-dessus cette pièce et occuper la case libre.\n   Une Dame peut sauter directement ou à distance d'une pièce adverse mais à condition qu'elles soient sur la même ligne.\n   La rafle par un pion : Un pion peut capturer plusieurs pièces successivement suivant la disposition des cases libres tout en respectant le déplacement et la prise simple des pions.\n   La rafle par une Dame : le principe est le même que celui du pion simple. La seule différence est que la Dame peut sauter plusieurs cases libres pour capturer dans toutes les directions.\n   Une rafle doit être clairement indiquée, pièce par pièce, en posant la pièce preneuse sur la case de saut, le temps d’y passer, et en déposant cette pièce sur la case terminale.\n   Dans la situation où les pièces à prendre sont en nombre égales dans deux ou plusieurs possibilités de prise ou de rafle, le joueur est libre de choisir une de ces possibilités.\n   La prise du plus grand nombre de pièces est prioritaire. La prise ne confère nulle priorité et n’impose aucune obligation. Le joueur peut ne pas faire une prise s’il veut ou s’il ne la remarque pas.\n   Dans ce cas, si son tour est passé, l'adversaire avant de jouer son tour peut enlever du plateau le pion ou la Dame qui devait faire une prise ou une rafle inachevée, ce qu'on appelle une prise surplace. Si le joueur pouvait faire deux prises, à deux endroits différents et qu’il choisisse une, l’adversaire ne pourra pas enlever l’autre pièce, la prise surplace est annulée. Dans le cas contraire il a le choix d’enlever n’importe quelle pièce qui devrait faire une capture, l'adversaire aussi s’il veut ou s’il ne remarque pas, il a le choix de ne pas enlever cette pièce et jouer son tour. "</string>
+    <string name="titreFinPartie">La fin de partie</string>
+    <string name="txtFinPartie">"La fin de partie est considérée comme égale lorsqu’il reste une seule pièce pour chaque joueur et que le joueur qui doit faire un coup ne peut pas capturer l’autre : la partie est nulle.\n    Un joueur gagne une partie lorsque son adversaire ne dispose plus de pièce dans le plateau. "</string>
+    <string name="copyrignt">Abdou KANJI | 2020 © Tous droits réservés</string>
+    <string name="commentDeplacer">Comment déplacer les pièces ?</string>
+    <string name="txtFaireUnDeplacementC"> \t- Cliquez sur un pion : si c’est votre tour, le pion sera sélectionné et les cases qu’il peut atteindre sont marquées par des points verts. Cliquez ensuite sur les cases valides pour déplacer le pion sélectionné.</string>
+    <string name="txtFaireUnDeplacementDD">"Il y a deux manières de déplacer les pièces sur le plateau :\n
+\t -Glisser et déposer : faites un appui long sur un pion, si c’est le vôtre automatiquement le pion se soulève, glissez le vers la case où vous voulez le poser. Une fois la case marquée verte lâchez le pion pour faire le déplacement et votre tour est passé, si la case est rouge le pion retourne directement à sa position de départ sur le plateau."</string>
+    <string name="commentFairePrise">"Comment faire une prise ? "</string>
+    <string name="txtPriseDD">Il y a aussi deux manières de faire des prises : \n
+\t -En mode "Glisser et Déposer" : Faites la même chose pour déplacer le pion, si votre doigt traverse un pion adverse, automatiquement ce pion est enlevé du plateau. S’il y a possibilité de faire une rafle, ne lâchez pas le pion continuer à faire des prises avec le même principe jusqu’à ce que le déplacement soit bloqué ou lorsque vous voulez arrêter la rafle.\nRemarquez que seul ce mode vous permet de faire une rafle. Mais faites attention quand vous faites une rafle avec une dame, dès que vous traversiez un pion adverse et que votre doigt arrive sur la case suivante libre, la prise est automatiquement faite et votre dame reste dans cette case, si vous voulez poser la dame dans une autre case libre, évitez de faire passer votre doigt sur les cases libres que vous atteigniez en premier. </string>
+    <string name="txtPriseC">"\t -En mode clic : une fois le pion cliqué, le marquage des cases valides par des points verts vous permet de savoir s’il y possibilité de faire une prise. Si vous cliquez sur une case valide et que le pion traverse un autre pion adverse, la prise sera ainsi faite. Attention ! Ce mode ne vous permet pas de faire une rafle. Si c’est votre tour, pour faire une prise surplace d'un pion adverse qui avait une possibilité de faire une prise et ne l’a pas fait, cliquez sur ce pion il sera enlevé du plateau. "</string>
+    <string name="txtDivers">Cliquer sur le bouton "retourner" pour changer la disposition des pièces sur le plateau. \n
+Lorsqu’il y a des irrégularités vous pouvez annuler un déplacement en cliquant sur le bouton "annuler". \n
+Pour plus de détails je vous exhorte à bien lire les règles du jeu dans "À-propos", elles sont simples ! </string>
+    <string name="appliquerLangue">Rouvrir l\'application pour changer la langue</string>
+</resources>

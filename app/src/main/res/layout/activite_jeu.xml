@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/background2"
+	android:padding="10dp">
+
+	<android.support.constraint.ConstraintLayout
+		android:id="@+id/constraintHaut"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<ImageButton
+			android:id="@+id/btRetourJeu"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_marginStart="10dp"
+			android:layout_marginLeft="10dp"
+			android:background="@drawable/retour"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<TextView
+			android:id="@+id/textView2"
+			android:layout_width="130dp"
+			android:layout_height="40dp"
+			android:background="@drawable/titre_demarrage"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toStartOf="@+id/btParametresJeu"
+			app:layout_constraintHorizontal_bias="0.5"
+			app:layout_constraintStart_toEndOf="@+id/btRetourJeu"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<ImageButton
+			android:id="@+id/btAide"
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:background="@drawable/aide"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toStartOf="@+id/btParametresJeu"
+			app:layout_constraintHorizontal_bias="0.5"
+			app:layout_constraintStart_toEndOf="@+id/textView2"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<ImageButton
+			android:id="@+id/btParametresJeu"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:background="@drawable/parametres"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+
+	</android.support.constraint.ConstraintLayout>
+
+	<TextView
+		android:id="@+id/tvInfoTourDeJeu"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="@color/noir"
+		android:textSize="17dp"
+		android:textStyle="bold"
+		android:gravity="center"
+		app:layout_constraintBottom_toTopOf="@+id/constraintPlateau"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/constraintHaut"/>
+
+	<android.support.constraint.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/constraintPlateau"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<com.kandjiabdou.jeupions12.Plateau
+			android:id="@+id/offlineChessBoard"
+			android:layout_width="320dp"
+			android:layout_height="320dp"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintHorizontal_bias="0.5"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<ProgressBar
+			android:id="@+id/pbThinking"
+			style="@android:style/Widget.DeviceDefault.Light.ProgressBar"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:visibility="gone"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintHorizontal_bias="0.5"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+	</android.support.constraint.ConstraintLayout>
+
+	<LinearLayout
+		android:id="@+id/linearLayout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:gravity="center"
+		app:layout_constraintBottom_toTopOf="@+id/constraintBasNp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/constraintPlateau">
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:orientation="vertical">
+
+			<ImageButton
+				android:id="@+id/btRetourner"
+				android:layout_width="60dp"
+				android:layout_height="50dp"
+				android:background="@drawable/retourner" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@color/marron_claire"
+				android:padding="4dp"
+				android:text="@string/retourner"
+				android:textColor="@color/noir"
+				android:textSize="15dp"
+				android:textStyle="bold" />
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<android.support.constraint.ConstraintLayout
+		android:id="@+id/constraintBasNp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintBottom_toBottomOf="parent">
+
+		<Button
+			android:id="@+id/btNouvelleParie"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="10dp"
+			android:layout_marginLeft="10dp"
+			android:layout_marginBottom="10dp"
+			android:background="@drawable/bg_vide"
+			android:text="@string/nouvelle_partie"
+			android:textColor="@color/noir"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintStart_toStartOf="parent" />
+
+		<Button
+			android:id="@+id/btAnnuler"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginEnd="10dp"
+			android:layout_marginRight="10dp"
+			android:layout_marginBottom="10dp"
+			android:background="@drawable/bg_vide"
+			android:text="@string/annuler"
+			android:textColor="@color/noir"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent" />
+	</android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

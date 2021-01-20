@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/background2"
+	android:orientation="vertical"
+	android:padding="10dp">
+
+	<android.support.constraint.ConstraintLayout
+		android:id="@+id/constraintLayout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<ImageButton
+			android:id="@+id/btRetourNp"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_marginStart="10dp"
+			android:layout_marginLeft="10dp"
+			android:layout_marginTop="10dp"
+			android:background="@drawable/retour"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<TextView
+			android:id="@+id/textView2"
+			android:layout_width="150dp"
+			android:layout_height="50dp"
+			android:background="@drawable/titre_demarrage"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toStartOf="@+id/btParametresNp"
+			app:layout_constraintHorizontal_bias="0.5"
+			app:layout_constraintStart_toEndOf="@+id/btRetourNp"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<ImageButton
+			android:id="@+id/btParametresNp"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_marginTop="10dp"
+			android:layout_marginEnd="10dp"
+			android:layout_marginRight="10dp"
+			android:background="@drawable/parametres"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+
+	</android.support.constraint.ConstraintLayout>
+
+	<LinearLayout
+		android:id="@+id/ground"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:divider="@drawable/case_valide"
+		android:gravity="center"
+		android:orientation="vertical"
+		android:padding="10dp"
+		android:textColor="@color/noir"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<TextView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="10dp"
+			android:background="@color/marron_claire"
+			android:gravity="center"
+			android:padding="10dp"
+			android:text="@string/titre_nouvelle_partie"
+			android:textColor="@color/noir"
+			android:textSize="16dp"
+			android:textStyle="bold" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="10dp"
+			android:orientation="vertical"
+			android:padding="5dp">
+
+			<TextView
+				android:id="@+id/tvJoueur1n"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@color/marron_claire"
+				android:gravity="center"
+				android:padding="5dp"
+				android:text="@string/joueur1n"
+				android:textColor="@color/noir"
+				android:textSize="16dp"
+				android:textStyle="bold" />
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/marron_claire"
+				android:orientation="horizontal"
+				android:padding="5dp">
+
+				<Button
+					android:id="@+id/btJoueurNoir"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginRight="10dp"
+					android:layout_weight="1"
+					android:text="@string/humain"
+					android:textColor="@color/noir"
+					android:textStyle="bold" />
+
+				<Button
+					android:id="@+id/btOrdinateurNoir"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:layout_weight="1"
+					android:text="@string/odinateur"
+					android:textColor="@color/noir"
+					android:textStyle="bold" />
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:padding="5dp">
+
+			<TextView
+				android:id="@+id/tvJoueur2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@color/marron_claire"
+				android:gravity="center"
+				android:padding="5dp"
+				android:text="@string/joueur2b"
+				android:textColor="@color/noir"
+				android:textSize="16dp"
+				android:textStyle="bold" />
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/marron_claire"
+				android:orientation="horizontal"
+				android:padding="5dp">
+
+				<Button
+					android:id="@+id/btJoueurRouge"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginRight="10dp"
+					android:layout_weight="1"
+					android:text="@string/humain"
+					android:textColor="@color/noir"
+					android:textStyle="bold" />
+
+				<Button
+					android:id="@+id/btOrdinateurRouge"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:layout_weight="1"
+					android:text="@string/odinateur"
+					android:textColor="@color/noir"
+					android:textStyle="bold" />
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+
+		<Button
+			android:id="@+id/btnQuiCommence"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="5dp"
+			android:background="@drawable/bg_blanc"
+			android:paddingLeft="30dp"
+			android:paddingRight="30dp"
+			android:text="Blanc Commence"
+			android:textStyle="bold" />
+
+		<TextView
+			android:id="@+id/text_difficulte"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingLeft="3dp"
+			android:paddingTop="5dp"
+			android:paddingBottom="7dp"
+			android:textColor="@color/noir"
+			android:textStyle="bold" />
+
+		<SeekBar
+			android:id="@+id/barDiffculte"
+			android:layout_width="fill_parent"
+			android:layout_height="28dp"
+			android:layout_marginLeft="6dp"
+			android:layout_marginRight="6dp"
+			android:background="@android:drawable/divider_horizontal_textfield"
+			android:fadeScrollbars="true"
+			android:longClickable="true"
+			android:max="2"
+			android:progress="1"
+			android:progressDrawable="@android:drawable/divider_horizontal_textfield"
+			android:thumb="@android:drawable/btn_default_small" />
+
+		<Button
+			android:id="@+id/btJouer"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="5dp"
+			android:background="@drawable/bg_vide"
+			android:paddingLeft="30dp"
+			android:paddingRight="30dp"
+			android:text="@string/bt_jouer_nouvelle_partie"
+			android:textColor="@color/noir"
+			android:textStyle="bold" />
+
+	</LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
